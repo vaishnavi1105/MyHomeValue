@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy a Villa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    .villa-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .villa-item {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: left;
+      overflow: hidden;
+    }
+    .villa-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .villa-item .details {
+      padding: 15px;
+    }
+    .villa-item .details h4 {
+      margin: 0 0 10px;
+      color: #007BFF;
+    }
+    .villa-item .details p {
+      margin: 5px 0;
+      color: #555;
+    }
+    .villa-item .details button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .villa-item .details button:hover {
+      background-color: #218838;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #007BFF;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Buy a Villa</h1>
+  <p>Select from the list of available villas below:</p>
+  <div class="villa-list">
+    <!-- Villa Item 1 -->
+    <div class="villa-item">
+      <img src="https://tse2.mm.bing.net/th?id=OIP.nDiYZ7i7oJLUagBt3CwuPQHaE7&pid=Api&P=0&h=180" alt="Luxury Villa 1">
+      <div class="details">
+        <h4>Luxury Villa 1</h4>
+        <p>Price: $500,000</p>
+        <p>Location: Beverly Hills, CA</p>
+        <button onclick="location.href='payment.html?name=Luxury%20Villa%201&price=500000&location=Beverly%20Hills,%20CA'">Buy Now</button>
+
+      </div>
+    </div>
+
+    <!-- Villa Item 2 -->
+    <div class="villa-item">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.eUMGfMf_1n5C8AnCSe7rzAHaE8&pid=Api&P=0&h=180" alt="Beachfront Villa">
+      <div class="details">
+        <h4>Beachfront Villa</h4>
+        <p>Price: $750,000</p>
+        <p>Location: Miami, FL</p>
+        <button onclick="location.href='payment.html?name=Luxury%20Villa%201&price=500000&location=Beverly%20Hills,%20CA'">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Villa Item 3 -->
+    <div class="villa-item">
+      <img src="https://tse2.mm.bing.net/th?id=OIP.gvbmZTcCxSmMMpDaEAbOBQHaE8&pid=Api&P=0&h=180" alt="Modern Villa">
+      <div class="details">
+        <h4>Modern Villa</h4>
+        <p>Price: $650,000</p>
+        <p>Location: New York City, NY</p>
+        <button onclick="location.href='payment.html?name=Luxury%20Villa%201&price=500000&location=Beverly%20Hills,%20CA'">Buy Now</button>
+      </div>
+    </div>
+  </div>
+  <a href="index.html">Return to Home</a>
+</body>
+</html>

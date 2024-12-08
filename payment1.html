@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #28a745;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <h1>Payment Page</h1>
+  <div class="container">
+    <h3>Enter Payment Details</h3>
+    <form id="paymentForm">
+      <input type="text" placeholder="Card Number" required>
+      <input type="text" placeholder="Card Holder's Name" required>
+      <input type="text" placeholder="Expiry Date (MM/YY)" required>
+      <input type="text" placeholder="CVV" required>
+      <button type="submit">Pay Now</button>
+    </form>
+  </div>
+  <script>
+    document.getElementById("paymentForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Payment Successful! Thank you for your purchase.");
+      // Redirect to a confirmation or home page
+      window.location.href = "confirmation.html";
+    });
+  </script>
+</body>
+</html>

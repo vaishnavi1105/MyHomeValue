@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Property</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      text-align: center;
+      padding-top: 50px;
+    }
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    input[type="text"], input[type="number"], textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #007BFF;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h2>Upload Your Property</h2>
+  <div class="container">
+    <form id="uploadForm">
+      <input type="text" id="propertyTitle" placeholder="Property Title" required>
+      <input type="number" id="propertyPrice" placeholder="Price" required>
+      <textarea id="propertyDescription" placeholder="Description" required></textarea>
+      <button type="submit">Upload Property</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("uploadForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const propertyTitle = document.getElementById("propertyTitle").value;
+      const propertyPrice = document.getElementById("propertyPrice").value;
+      const propertyDescription = document.getElementById("propertyDescription").value;
+
+      alert("Property uploaded successfully!\n\n" + 
+            "Title: " + propertyTitle + "\n" +
+            "Price: " + propertyPrice + "\n" +
+            "Description: " + propertyDescription);
+
+      // Redirect or handle as needed
+      window.location.href = "user-dashboard.html"; // Go back to the dashboard
+    });
+  </script>
+</body>
+</html>

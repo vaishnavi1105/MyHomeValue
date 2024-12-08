@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy a House</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .house {
+      margin: 20px 0;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background: #fff;
+      text-align: left;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Available Houses</h1>
+  <div class="container">
+    <div class="house">
+      <h3>House 1</h3>
+      <img src="https://tse4.mm.bing.net/th?id=OIP.eUMGfMf_1n5C8AnCSe7rzAHaE8&pid=Api&P=0&h=180" alt="Beachfront Villa">
+
+      <p>Location: Springfield</p>
+      <p>Price: $300,000</p>
+      <button onclick="redirectToPayment()">Buy</button>
+    </div>
+    <div class="house">
+      <h3>House 2</h3>
+      <img src="https://tse2.mm.bing.net/th?id=OIP.gvbmZTcCxSmMMpDaEAbOBQHaE8&pid=Api&P=0&h=180" alt="Modern Villa">
+
+      <p>Location: Shelbyville</p>
+      <p>Price: $250,000</p>
+      <button onclick="redirectToPayment()">Buy</button>
+    </div>
+    <div class="house">
+      <h3>House 3</h3>
+      <img src="https://tse2.mm.bing.net/th?id=OIP.nDiYZ7i7oJLUagBt3CwuPQHaE7&pid=Api&P=0&h=180" alt="Luxury Villa 1">
+
+      <p>Location: Springfield</p>
+      <p>Price: $300,000</p>
+      <button onclick="redirectToPayment()">Buy</button>
+    </div>
+
+  </div>
+  <script>
+    // Function to redirect to payment page
+    function redirectToPayment() {
+      window.location.href = "payment1.html";
+    }
+  </script>
+</body>
+</html>
+
+
+

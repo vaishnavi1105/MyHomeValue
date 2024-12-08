@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete or Mark Property as Sold Out</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 20px;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    button {
+      background-color: #d9534f;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #c9302c;
+    }
+  </style>
+</head>
+<body>
+  <h1>Delete or Mark Property as Sold Out</h1>
+  <form action="/mark-sold-out" method="POST">
+    <!-- Property Name -->
+    <label for="propertyName">Property Name:</label>
+    <input type="text" id="propertyName" name="propertyName" placeholder="Enter property name" required>
+
+    <!-- Location -->
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" placeholder="Enter property location" required>
+
+    <!-- Reason or Comment -->
+    <label for="reason">Reason/Comment:</label>
+    <textarea id="reason" name="reason" rows="4" placeholder="E.g., Sold out, Owner request, etc." required></textarea>
+
+    <!-- Submit Button -->
+    <button type="submit">Mark as Sold Out</button>
+  </form>
+  <a href="index.html">Return to Home</a>
+</body>
+</html>
